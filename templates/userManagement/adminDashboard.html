@@ -1,0 +1,78 @@
+{% extends 'base/base.html' %}
+{% block title %}Dashboard{% endblock title %}
+{% block content %}
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        <h1>
+            Dashboard
+        </h1>
+        {% comment %} <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol> {% endcomment %}
+        </section>
+
+        <!-- Main content -->
+        <section class="content" id="dashboard-1">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-white" style="padding:24px 17px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/static/assets/dist/img/Group 35213.png">
+                    </div>
+                    <div class="inner">
+                        <div class="col-md-8">
+                        <h4>{{totalJobPosted}}+</h4>
+                        <p>Total Job Posted</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-white" style="padding:24px 17px;">
+                <div class="row">
+                <div class="col-md-4">
+                    <img src="/static/assets/dist/img/Group 35213 (1).png">
+                </div>
+                <div class="inner">
+                    <div class="col-md-8">
+                    <h4>899+</h4>
+                    <p>Total Contract Done</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-white" style="padding:24px 17px;">
+                <div class="row">
+                <div class="col-md-4">
+                    <img src="/static/assets/dist/img/Group 35213 (2).png">
+                </div>
+                <div class="inner">
+                    <div class="col-md-8">
+                    <h4>89789+</h4>
+                    <p>Average Price</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- ./col -->
+        </div>
+
+        <!-- /.row -->
+
+        </section>
+    </div>
+
+{% endblock content%}
